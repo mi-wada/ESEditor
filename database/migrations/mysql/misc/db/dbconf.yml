@@ -1,0 +1,7 @@
+local:
+    driver: mymysql
+    open: tcp:localhost:3306*es_editor_misc/root/root
+
+development:
+    driver: mymysql
+    open: tcp:localhost:3306*es_editor_misc/ponion/ponion

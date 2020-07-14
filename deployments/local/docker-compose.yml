@@ -1,0 +1,36 @@
+version: '3'
+services:
+  php.ponion-lab.es-editor:
+    build: ./php
+    environment:
+      DATABASE_HOST: db.ponion-lab.es-editor
+    links:
+      - db.ponion-lab.es-editor
+    volumes:
+      - ../..:/var/www/
+
+  nginx.ponion-lab.es-editor:
+    image: nginx:1.13.5-alpine
+    ports:
+      - "8080:80"
+    links:
+      - php.ponion-lab.es-editor
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ../../:/var/www/
+      - ../../logs/:/var/log/
+
+  db.ponion-lab.es-editor:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: es_editor_misc
+      MYSQL_USER: ponion-lab
+      MYSQL_PASSWORD: ponion-lab
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/conf.d/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ../../var/mounts/mysql/db/:/var/lib/mysql/
+      - ./db/initdb.d/:/docker-entrypoint-initdb.d/
+    user: "1000:50"

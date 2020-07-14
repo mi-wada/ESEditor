@@ -1,0 +1,12 @@
+{
+  "databases": [
+    {
+      "label": "misc",
+      "username": "root",
+      "password": "root",
+      "host": "db.ponion-lab.es-editor",
+      "schema": "es_editor_misc",
+      "charset": "utf8"
+    }
+  ]
+}
