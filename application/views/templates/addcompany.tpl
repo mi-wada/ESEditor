@@ -24,7 +24,7 @@
     <form class="Center" method="post" action="/saveCompany">
       <p>企業名を入力</p>
       <p><input type="text" name="company_name" placeholder="企業名"></p>
-      <input type="submit" name="signup">
+      <input type="submit" class="btn btn-primary" name="signup">
     </form>
   </main>
 <footer>

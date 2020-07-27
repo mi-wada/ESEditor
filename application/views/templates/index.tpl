@@ -19,7 +19,7 @@
           </p>
         </form>
         <p style="display:inline;">&nbsp;</p>
-        <a class="btn btn-info" href="/register">会員登録</a>
+        <a class="btn btn-success" href="/register">会員登録</a>
     </header>
     <main>
       <h3>エントリーシートの作成を支援するサイトです</h3>

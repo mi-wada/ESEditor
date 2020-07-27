@@ -21,7 +21,7 @@
         <p><input type="id" name="id" placeholder="ID"></p>
         <p><input type="password" name="password" placeholder="PASSWORD"></p>
         <p><input type="password" name="passwordcheck" placeholder="確認用PASSWORD"></p>
-        <input type="submit" class="btn btn-info" name="signup" value="Sign up">
+        <input type="submit" class="btn btn-primary" name="signup" value="Sign up">
       </form>
     </main>
     <footer>

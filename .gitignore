@@ -1,0 +1,19 @@
+# Project Exclude Directories
+var/
+vendor/
+
+# Smarty
+application/views/cache/*
+application/views/compiled/*
+
+# IntelliJ
+.idea
+
+# Mac
+.DS_Store
+
+# log
+*.log
+
+# process file
+*.pid

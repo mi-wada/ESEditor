@@ -1,6 +1,0 @@
-composer.lock
-vendor
-.idea
-
-#Unit Test Compile Dir
-tests/templates_c

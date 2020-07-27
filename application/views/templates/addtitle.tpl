@@ -25,7 +25,7 @@
       <p>{$companyName}</p>
       <p><input type="text" name="title" placeholder="タイトルを入力"></p>
       <p><input type="number" name="character_limit" placeholder="文字制限を入力"></p>
-      <input type="submit" class="btn btn-info" name="signup">
+      <input type="submit" class="btn btn-primary" name="signup">
     </form>
   </main>
 <footer>

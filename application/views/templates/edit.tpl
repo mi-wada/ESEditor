@@ -26,7 +26,7 @@
       <p>{$company_name} - {$title}</p>
       <form method="post" action="/saveText">
         <textarea name="text" onKeyUp="count_length(value, 'text_length');" rows="18" cols="70">{$text}</textarea><br>
-        <input type="submit" class="btn btn-info" name="signup" value="Save">
+        <input type="submit" class="btn btn-primary" name="signup" value="Save">
       </form>
       <p style="display:inline;" id="text_length">0</p>
       <p style="display:inline;"> / {$character_limit}文字</p>
