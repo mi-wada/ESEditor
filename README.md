@@ -32,7 +32,7 @@
 
 データベースにテーブルを追加する場合は、`goose` を利用する。
 ターミナルから `database/migrations/mysql/misc` に移動して、
-`../goose_mac create {マイグレーション内容(半角英数)} sql` を入力。
+`../goose_mac create {マイグレーション内容(半角英数)} sql` を入力する。
 `database/migrations/mysql/misc/db/migrations` にマイグレーションファイルが生成されるので、
 テーブルの作成・更新クエリと、それを元に戻すクエリを記述する。
 記述が終わったら、`database/migrations/mysql/misc` で `../goose_mac -env local up` を実行する。
