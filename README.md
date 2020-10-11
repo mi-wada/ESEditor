@@ -1,5 +1,5 @@
 # ES Editor
-
+![image](https://user-images.githubusercontent.com/49638956/95670774-8b1a7b80-0bca-11eb-977c-2ef3402cffaa.png)
 ## 開発の方針
 
 * Dockerを用いてローカルで実装を行い、ミニマムな開発単位でコミット・PRを行う
